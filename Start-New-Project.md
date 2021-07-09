@@ -77,3 +77,15 @@ Documentação completa online [https://pt-br.reactjs.org/docs/create-a-new-reac
 ```sh
 # npm install --save react-icons
 ```
+
+
+## extesion: auto complete tag html
+
+Auto Rename Tag
+[https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+
+## extesion vscode: dracula offcial
+
+Theme de cor com constraste muito bom.
+[https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
