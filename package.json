@@ -32,7 +32,8 @@
     "eject": "react-scripts eject",
     "cover": "npm test -- --coverage --watchAll=false",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=cd133a10cc73"
   },
   "eslintConfig": {
     "extends": [
@@ -78,5 +79,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chromatic": "^5.9.2"
+  }
 }
