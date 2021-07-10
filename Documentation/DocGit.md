@@ -81,3 +81,16 @@ Após o Pull Request ser criado seu código fonte passar por um processo de anal
 
 O Pull Request esta aprovado e os check list também. Uiiiii! \
 Seu código fonte esta pronto para ser submetido para o projeto principal.
+
+
+
+# Deploy
+
+## https://vercel.com/
+
+O vercel vamos utilizar para fazer o deploy de nossa aplicação e deixar nosso site online.
+
+
+## https://www.chromatic.com/
+
+O chromatic vamos utilizar para fazer deploy do storybook e deixar online nosso storybook como uma documentação para nosso cliente analisar ponto a ponto
