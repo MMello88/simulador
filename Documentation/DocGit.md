@@ -64,3 +64,20 @@ Ao clicar no **Open pull request** teremos a seguinte tela abaixo.
 * A parte central irá informar um titulo e/ou deixar um comentário, este comentário tem formato de Markedown igual ao ``README.md``.
 
 > Nota: Ao criar o **Pull Request** os deployers já vão disponibilizar um ambiente online ou para testar ou para uma prévia para seu cliente analisar.
+
+### Deploye
+
+O depolye irá recompilar seu projeto, refazer os test criado, e se o deployers que estiver usando precise que também faça em seu site para uma revisão. Tudo isso vai fazer parte do check list. Enquanto os check list não estiver aprovador o merge não se habilitá para submeter na sua brenche principal.
+
+> Deployer Chromatic do storybook obriga revisar component por component criado para ser aprovado.
+
+
+## Reviews
+
+Após o Pull Request ser criado seu código fonte passar por um processo de analise. Alguém ou vocês mesmo pode revisar seu código podendo adicionar comentários, aprovar ou negar o seu pull request.
+
+
+## O Merge
+
+O Pull Request esta aprovado e os check list também. Uiiiii! \
+Seu código fonte esta pronto para ser submetido para o projeto principal.
