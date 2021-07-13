@@ -35,7 +35,7 @@ jobs:
       - run:
           name: Run lint
           command: npm run lint
-      - codecov:
+      - codecov/upload:
           file: coverage/*.json
 
 workflows:
