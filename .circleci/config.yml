@@ -37,6 +37,27 @@ jobs:
           command: npm run lint
       - codecov/upload:
           file: coverage/*.json
+      - run:
+          name: set echo token
+          command: echo ${CHROMATIC_TOKEN}
+      - run:
+          name: chromatic send
+          command: npm run chromatic
+          # CHROMATIC_TOKEN é uma variavel de ambiente que esta definida nas configurações do CI deste repositório
+          # CHROMATIC_TOKEN contem o token para não ficar exposto
+
+
+  versioning:
+    docker:
+      - image: cimg/node:15.1
+    # Then run your tests!
+    # CircleCI will report the results back to your VCS provider.
+    steps:
+      # Checkout the code as the first step.
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version.js MattMello88 simulador
 
 workflows:
   # Below is the definition of your workflow.
@@ -48,3 +69,9 @@ workflows:
       - build-and-test
       # For running simple node tests, you could optionally use the node/test job from the orb to replicate and replace the job above in fewer lines.
       # - node/test
+      - versioning:
+          filters:
+            branches:
+              ignore: main
+            tags:
+              ignore: /.*/

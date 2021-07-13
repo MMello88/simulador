@@ -1,6 +1,6 @@
 {
   "name": "simulador",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@storybook/addon-actions": "^6.3.2",
@@ -34,7 +34,7 @@
     "cover": "npm test -- --coverage --watchAll=false",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "chromatic --project-token=cd133a10cc73",
+    "chromatic": "chromatic --exit-zero-on-changes --project-token=${CHROMATIC_TOKEN}",
     "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
