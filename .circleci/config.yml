@@ -64,6 +64,6 @@ workflows:
       - versioning:
           filters:
             branches:
-              ingnore: main
+              ignore: main
             tags:
-              ingnore: /.*/
+              ignore: /.*/
