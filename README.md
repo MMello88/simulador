@@ -1,5 +1,6 @@
 # Painel fiscal - Simulador
 
+## CircleCI
 Branche: main \
 ![CircleCI](https://img.shields.io/circleci/build/github/MattMello88/simulador)
 
@@ -8,6 +9,17 @@ Branche: correcoes-hemo \
 
 Branche: integracao-continua \
 ![CircleCI](https://img.shields.io/circleci/build/github/MattMello88/simulador/integracao-continua)
+
+## CodeCov
+Branche: main \
+![Codecov](https://img.shields.io/codecov/c/github/MattMello88/simulador)
+
+Branche: correcoes-hemo \
+![Codecov](https://img.shields.io/codecov/c/github/MattMello88/simulador/correcoes-hemo)
+
+Branche: integracao-continua  \
+![Codecov](https://img.shields.io/codecov/c/github/MattMello88/simulador/integracao-continua )
+
 
 # Ler final do arquivo os comando para utilização deste projeto na maquina do dev
 
