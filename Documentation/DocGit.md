@@ -94,3 +94,35 @@ O vercel vamos utilizar para fazer o deploy de nossa aplicação e deixar nosso 
 ## https://www.chromatic.com/
 
 O chromatic vamos utilizar para fazer deploy do storybook e deixar online nosso storybook como uma documentação para nosso cliente analisar ponto a ponto
+
+## Atualizando a brech main
+
+Vamos trocar a origin que esta com *correcoes-home* para *main* utilizando o seguinte comando
+
+```sh
+# git checkout main
+```
+
+Assim q trocamos ele nos mostra que existem submissões a serem feitas e para isso usamos o comando
+
+```sh
+# git pull
+```
+
+Pronto o seu github na branche main esta atulizada igual ao do seu repositório online.
+
+## Criando uma Release
+
+A release uma braço da branche *main* que é identificado com **tag** que vai conter o seu sistema completo e finalizado. Permitindo avançar com o sistema com novas features. Em caso de necessidade voltar uma versão, é pela release que saberá que seu sistema vai está estável.
+
+Em seu repositório com sua branche *main* selecionado, ao lado direito vai em Release
+
+![](./assets/release-parte-1.png)
+
+Informe a versão no padrão iniciando com a letra v e o numero da versão a ser liberada. Para saber mais [semver](https://semver.org/lang/pt-BR/). De um titulo e uma descrição e está pronto para publicar a realease
+
+![](./assets/release-parte-2.png)
+
+A release fica zipada e pode ser distribuida.
+
+![](./assets/release-parte-3.png)
