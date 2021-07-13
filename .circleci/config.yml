@@ -38,8 +38,8 @@ jobs:
       - codecov/upload:
           file: coverage/*.json
       - run:
-        name: set echo token
-        command: echo ${CHROMATIC_TOKEN}
+          name: set echo token
+          command: echo ${CHROMATIC_TOKEN}
       - run:
           name: chromatic send
           command: npm run chromatic --project-token=${CHROMATIC_TOKEN}
