@@ -39,7 +39,7 @@ jobs:
           file: coverage/*.json
       - run:
           name: chromatic send
-          command: npm run chromatic --project-token=${CHROMATIC_TOKEN}
+          command: npm chromatic --project-token=${CHROMATIC_TOKEN}
           # CHROMATIC_TOKEN é uma variavel de ambiente que esta definida nas configurações do CI deste repositório
           # CHROMATIC_TOKEN contem o token para não ficar exposto
 
