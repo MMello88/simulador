@@ -30,7 +30,7 @@ jobs:
       #     pkg-manager: yarn 
       - run:
           name: Run tests
-          command: npm test -u
+          command: npm test -- --coverage --updateSnapshot
       - run:
           name: Run lint
           command: npm run lint
