@@ -1,6 +1,3 @@
-import React from 'react';
-import { render } from 'test-utils';
-
 import { BreakpointSize, breakAt } from 'simulador/styles/Breakpoints';
 
 test.each([

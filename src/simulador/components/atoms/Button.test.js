@@ -23,13 +23,16 @@ test('trigger event on click', () => {
 });
 
 
-test.each(Object.values(ButtonColors).map(item => [item]))('render with collor %s', (color) => {
-  const {asFragment} = render(<Button color={color}>Click here</Button>);
-  
-  expect(asFragment()).toMatchSnapshot();
-});
+test.each(Object.values(ButtonColors).map((item) => [item]))(
+  "renders with color %s",
+  (color) => {
+    const { asFragment } = render(<Button color={color} />);
 
-test.each(Object.values(ButtonsVariants).map(item => [item]))('render with collor %s', (variant) => {
+    expect(asFragment()).toMatchSnapshot();
+  }
+);
+
+test.each(Object.values(ButtonsVariants).map((item) => [item]))('render with collor %s', (variant) => {
   const {asFragment} = render(<Button variant={variant}>Click here</Button>);
   
   expect(asFragment()).toMatchSnapshot();
