@@ -1,5 +1,7 @@
 # Painel fiscal - Simulador
 
+![CircleCI](https://img.shields.io/circleci/build/github/MattMello88/simulador)
+
 # Ler final do arquivo os comando para utilização deste projeto na maquina do dev
 
 
