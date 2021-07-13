@@ -37,7 +37,7 @@ jobs:
           command: npm run lint
       - codecov/upload:
           file: coverage/*.json
-      - run
+      - run:
         name: set echo token
         command: echo ${CHROMATIC_TOKEN}
       - run:
