@@ -6,10 +6,18 @@ import Hero from "simulador/components/molecules/Hero";
 import { Heading } from "simulador/components/atoms/Heading";
 import Section from "simulador/components/molecules/Section";
 import Grid from "simulador/components/atoms/Grid";
-import Footer from "simulador/components/organisms/MyFooter"
+import Footer from "simulador/components/organisms/MyFooter";
+import Card, {CardBody, CardMedia, CardMediaDescription} from "simulador/components/atoms/Card";
 
 import BgSlider1 from "simulador/assets/slider-01.jpg";
 import AboutImage from "draws/About";
+
+import Inst1 from "simulador/assets/instrutors/inst1.jpg";
+import Inst2 from "simulador/assets/instrutors/inst2.jpg";
+import Inst3 from "simulador/assets/instrutors/inst3.jpg";
+import Inst4 from "simulador/assets/instrutors/inst4.jpg";
+import Inst5 from "simulador/assets/instrutors/inst5.jpg";
+import Inst6 from "simulador/assets/instrutors/inst6.jpg";
 
 
 const ImageContainer = styled.div`
@@ -20,6 +28,39 @@ const ImageContainer = styled.div`
   }
   color: ${(props) => props.theme.colors.primary.main};
 `;
+
+const instructors = [
+  {
+    id: 1,
+    name: "Matheus",
+    avatar: Inst1
+  },
+  {
+    id: 2,
+    name: "Cris",
+    avatar: Inst2
+  },
+  {
+    id: 3,
+    name: "Leo",
+    avatar: Inst3
+  },
+  {
+    id: 4,
+    name: "Bob",
+    avatar: Inst4
+  },
+  {
+    id: 5,
+    name: "Buddy",
+    avatar: Inst5
+  },
+  {
+    id: 6,
+    name: "Mike",
+    avatar: Inst6
+  }
+]
 
 const About = () => (
   <>
@@ -73,6 +114,17 @@ const About = () => (
       <Heading>
         <h2>Conheça nossos professores</h2>
       </Heading>
+      <Grid sm={2} md={3} lg={4}>
+        {instructors.map((instructor) => (
+          <Card key={instructor.id}>
+            <CardMedia image={instructor.avatar}>
+              <CardMediaDescription>
+                <h5>{instructor.name}</h5>
+              </CardMediaDescription>
+            </CardMedia>
+          </Card>
+        ))}
+      </Grid>
     </Section>
 
     <Footer></Footer>
