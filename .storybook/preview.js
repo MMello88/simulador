@@ -2,6 +2,7 @@ import React from 'react';
 import { addDecorator, addParameters } from "@storybook/react";
 import { MINIMAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { select } from "@storybook/addon-knobs";
+import { MemoryRouter as Router } from "react-router-dom";
 
 import { GlobalStyle } from '../src/simulador/styles/GlobalStyle';
 import ThemeProvider, { ThemeNames } from '../src/simulador/styles/ThemeProvider';
@@ -62,10 +63,10 @@ addParameters({
 });
 
 addDecorator((storyFn) => (
-  <>
+  <Router>
     <ThemeProvider theme={select("Theme", ThemeNames, ThemeNames.light)}>
       <GlobalStyle />
       {storyFn()}
     </ThemeProvider>
-  </>
+  </Router>
 ))
