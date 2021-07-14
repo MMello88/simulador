@@ -25,7 +25,5 @@ export const usege = () => (
       <SpeedImage></SpeedImage>
     </CalloutMedia>
 
-
-    
   </Callout>
 );
