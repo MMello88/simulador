@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import BgSlider1 from "simulador/assets/slider-01.jpg";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
@@ -75,7 +76,7 @@ function Home() {
                 Nisi deserunt adipisicing labore labore fugiat eiusmod elit incididunt aliqua quis reprehenderit dolor.
               </p>
               <div>
-                <Button color="primary">Saiba mais</Button>
+                <Button as={Link} to="/Sobre" color="primary">Saiba mais</Button>
               </div>
             </div>
             <div>

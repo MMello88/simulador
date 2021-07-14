@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { FaIdCard, FaHome, FaScroll } from"react-icons/fa";
 
+import { useScrollToTop } from "hooks/scroll";
+
 import Hero from "simulador/components/molecules/Hero";
 import { Heading } from "simulador/components/atoms/Heading";
 import Section from "simulador/components/molecules/Section";
 import Footer from "simulador/components/organisms/MyFooter";
 import Callout, {CalloutBody, CalloutActions, CalloutMedia} from "simulador/components/atoms/Callout";
 import Button from "simulador/components/atoms/Button";
+import BreadCrumb from "simulador/components/atoms/BreadCrumb";
 
 import SpeedImage from "draws/Speed";
 import BgSlider1 from "simulador/assets/slider-01.jpg";
@@ -37,59 +40,70 @@ const PinnedItem =styled.li`
   }
 `;
 
-const ProductDetail = () => (
-  <>
-    <Hero image={BgSlider1}>
-      <Heading>
-        <h1>Nome do Serviço</h1>
-      </Heading>
-    </Hero>
-    <Section>
-      <p>Ea ullamco qui tempor eu laboris amet anim minim officia proident elit veniam.</p>
-      <p>Aliquip aliquip amet aliquip et adipisicing consequat Lorem consequat enim ullamco reprehenderit laboris.</p>
-      <p>Pariatur quis commodo est ut consequat aliquip.</p>
-      <h5>Documento necessário</h5>
-      <PinnedList>
-        <PinnedItem>
-          <FaIdCard />
-          RG
-        </PinnedItem>
-        <PinnedItem>
-          <FaIdCard />
-          CPF
-        </PinnedItem>
-        <PinnedItem>
-          <FaHome />
-          Certidão de nascimento ou casamento
-        </PinnedItem>
-        <PinnedItem>
-          <FaScroll />
-          Comprovante de Residencia
-        </PinnedItem>
-      </PinnedList>
-    </Section>
+const ProductDetail = () => {
+  useScrollToTop();
 
-    <Section inverse>
-      <Callout>
-        <CalloutBody>
-          <h6>Ex commodo nulla dolor sit sunt veniam dolor mollit.</h6>
-          <p>Cillum incididunt labore elit ut labore reprehenderit fugiat duis aute minim proident.</p>
+  const items = [
+    {label: "Inicio", link: "/"},
+    {label: "Serviços", link: ""},
+    {label: "Nome do Serviço", link: ""},
+  ]
 
-          <CalloutActions>
-            <Button color="primary" >Matricular</Button>
-          </CalloutActions>
+  return (
+    <>
+      <Hero image={BgSlider1}>
+        <Heading>
+          <h1>Nome do Serviço</h1>
+          <BreadCrumb items={items} />
+        </Heading>
+      </Hero>
+      <Section>
+        <p>Ea ullamco qui tempor eu laboris amet anim minim officia proident elit veniam.</p>
+        <p>Aliquip aliquip amet aliquip et adipisicing consequat Lorem consequat enim ullamco reprehenderit laboris.</p>
+        <p>Pariatur quis commodo est ut consequat aliquip.</p>
+        <h5>Documento necessário</h5>
+        <PinnedList>
+          <PinnedItem>
+            <FaIdCard />
+            RG
+          </PinnedItem>
+          <PinnedItem>
+            <FaIdCard />
+            CPF
+          </PinnedItem>
+          <PinnedItem>
+            <FaHome />
+            Certidão de nascimento ou casamento
+          </PinnedItem>
+          <PinnedItem>
+            <FaScroll />
+            Comprovante de Residencia
+          </PinnedItem>
+        </PinnedList>
+      </Section>
+
+      <Section inverse>
+        <Callout>
+          <CalloutBody>
+            <h6>Ex commodo nulla dolor sit sunt veniam dolor mollit.</h6>
+            <p>Cillum incididunt labore elit ut labore reprehenderit fugiat duis aute minim proident.</p>
+
+            <CalloutActions>
+              <Button color="primary" >Matricular</Button>
+            </CalloutActions>
+            
+          </CalloutBody>
           
-        </CalloutBody>
-        
-        <CalloutMedia>
-          <SpeedImage></SpeedImage>
-        </CalloutMedia>
+          <CalloutMedia>
+            <SpeedImage></SpeedImage>
+          </CalloutMedia>
 
-      </Callout>
-    </Section>
+        </Callout>
+      </Section>
 
-    <Footer></Footer>
-  </>
-);
+      <Footer></Footer>
+    </>
+  );
+}
 
 export default ProductDetail;
