@@ -46,7 +46,7 @@ const ProductDetail = () => {
   const items = [
     {label: "Inicio", link: "/"},
     {label: "Serviços", link: ""},
-    {label: "Nome do Serviço", link: ""},
+    {label: "Nome Serviço", link: ""},
   ]
 
   return (
