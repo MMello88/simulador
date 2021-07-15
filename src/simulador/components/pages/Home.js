@@ -80,7 +80,7 @@ function Home() {
               </div>
             </div>
             <div>
-              <video src={VideoBeach} width="100%" autoPlay muted loop />
+              <video src={VideoBeach} width="100%" autoPlay playsInline muted loop />
             </div>
           </Grid>
 
