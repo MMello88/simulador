@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { FaIdCard, FaHome, FaScroll } from"react-icons/fa";
 
+import ProductType from "types/ProductType";
+
 import Hero from "simulador/components/molecules/Hero";
 import { Heading } from "simulador/components/atoms/Heading";
 import Section from "simulador/components/molecules/Section";
@@ -38,18 +40,18 @@ const PinnedItem =styled.li`
   }
 `;
 
-const ProductDetail = () => {
+const ProductDetail = ({ product }) => {
   const items = [
     {label: "Inicio", link: "/"},
     {label: "Serviços", link: ""},
-    {label: "Nome Serviço", link: ""},
+    {label: product.title, link: ""},
   ]
 
   return (
     <>
       <Hero image={BgSlider1}>
         <Heading>
-          <h1>Nome do Serviço</h1>
+          <h1>{product.title}</h1>
           <BreadCrumb items={items} />
         </Heading>
       </Hero>
@@ -100,6 +102,14 @@ const ProductDetail = () => {
       <Footer></Footer>
     </>
   );
+}
+
+ProductDetail.defaultProps = {
+  product: {}
+}
+
+ProductDetail.propTypes = {
+  product: ProductType
 }
 
 export default ProductDetail;

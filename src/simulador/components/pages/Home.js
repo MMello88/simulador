@@ -1,12 +1,10 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import BgSlider1 from "simulador/assets/slider-01.jpg";
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from "react-icons/fa";
 import VideoBeach from "simulador/assets/BeachSunset.mp4";
-import car1 from "simulador/assets/car1.jpg";
-import car2 from "simulador/assets/car2.jpg";
-import car3 from "simulador/assets/car3.jpg";
 
 import Hero from "simulador/components/molecules/Hero";
 import {Heading} from "simulador/components/atoms/Heading";
@@ -18,17 +16,9 @@ import MyFooter from "simulador/components/organisms/MyFooter";
 import ProductGrid from "simulador/components/organisms/ProductGrid";
 import Accordion, {AccordionGroup} from "simulador/components/atoms/Accordion";
 
-const products = [
-  {id:1, title:"porschie", summary:"Ullamco Lorem laboris veniam occaecat esse ut elit est.", image:car1},
-  {id:2, title:"lamborguine", summary:"Ullamco Lorem laboris veniam occaecat esse ut elit est.", image:car2},
-  {id:3, title:"ferrari", summary:"Ullamco Lorem laboris veniam occaecat esse ut elit est.", image:car3},
-  {id:4, title:"porschie", summary:"Ullamco Lorem laboris veniam occaecat esse ut elit est.", image:car3},
-  {id:5, title:"lamborguine", summary:"Ullamco Lorem laboris veniam occaecat esse ut elit est.", image:car1},
-  {id:6, title:"ferrari", summary:"Ullamco Lorem laboris veniam occaecat esse ut elit est.", image:car2},
-  {id:7, title:"porschie", summary:"Ullamco Lorem laboris veniam occaecat esse ut elit est.", image:car2},
-];
+import ProductType from "types/ProductType";
 
-function Home() {
+function Home({products}) {
     return (
       <>
         <Hero image={BgSlider1} /*title={<span>Ganha sua <strong>liberdade</strong><br /> para ir e ver</span>} */> 
@@ -106,5 +96,15 @@ function Home() {
       
     );
 }
+
+ProductGrid.defaultProps = {
+  products: [],
+};
+
+ProductGrid.propTypes = {
+  products: PropTypes.arrayOf(
+    ProductType
+  )
+};
 
 export default Home;
