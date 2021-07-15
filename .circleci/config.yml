@@ -39,11 +39,11 @@ jobs:
       - run:
           name: Run lint check
           command: yarn lint
-      #- run:
-      #    name: Run tests com coverage
-      #    command: yarn cover
-      #- codecov/upload:
-      #    file: coverage/*.json
+      - run:
+          name: Run tests com coverage
+          command: yarn cover
+      - codecov/upload:
+          file: coverage/*.json
       - run:
           name: chromatic send
           command: yarn chromatic --project-token=${CHROMATIC_TOKEN}
