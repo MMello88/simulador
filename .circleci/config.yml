@@ -25,24 +25,29 @@ jobs:
       - checkout
       # Next, the node orb's install-packages step will install the dependencies from a package.json.
       # The orb install-packages step will also automatically cache them for faster future runs.
-      - node/install-packages
+      - node/install-yarn
       # If you are using yarn instead npm, remove the line above and uncomment the two lines below.
       # - node/install-packages:
       #     pkg-manager: yarn 
       - run:
-          name: Run tests
-          command: npm test -- --coverage --updateSnapshot
+          name: Show Node version
+          command: |
+            node --version
+            yarn --version
+      - node/install-packages:
+          pkg-manager: yarn
       - run:
-          name: Run lint
-          command: npm run lint
+          name: Run lint check
+          command: yarn lint
+      - run:
+          name: Run tests com coverage
+          command: yarn cover
       - codecov/upload:
           file: coverage/*.json
       - run:
-          name: set echo token
-          command: echo ${CHROMATIC_TOKEN}
-      - run:
           name: chromatic send
-          command: npm run chromatic
+          command: yarn chromatic --project-token=${CHROMATIC_TOKEN}
+          # npm run chromatic
           # CHROMATIC_TOKEN é uma variavel de ambiente que esta definida nas configurações do CI deste repositório
           # CHROMATIC_TOKEN contem o token para não ficar exposto
 

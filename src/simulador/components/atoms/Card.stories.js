@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card, {CardBody, CardMedia} from "simulador/components/atoms/Card";
+import Card, {CardBody, CardMedia, CardMediaDescription} from "simulador/components/atoms/Card";
 import Section from "simulador/components/molecules/Section";
 import { Heading } from "simulador/components/atoms/Heading";
 import Button from "simulador/components/atoms/Button";
@@ -12,7 +12,7 @@ import car3 from "simulador/assets/car3.jpg";*/
 export default {
   title: "Components/Atoms/Card",
   component: Card,
-  subcomponents: {CardBody, CardMedia}
+  subcomponents: {CardBody, CardMedia, CardMediaDescription}
 }
 
 export const usege = () => (
@@ -45,6 +45,18 @@ export const withMedia = () => (
           <Button color="primary" variant="link">Saiba mais</Button>
         </div>
       </CardBody>
+    </Card>
+  </Section>
+);
+
+export const onlyMedia = () => (
+  <Section inverse>
+    <Card>
+      <CardMedia image={car1}>
+        <CardMediaDescription>
+          <h5>Descrição da imagem</h5>
+        </CardMediaDescription>
+      </CardMedia>
     </Card>
   </Section>
 );

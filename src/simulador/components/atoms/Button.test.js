@@ -4,7 +4,7 @@ import { render, fireEvent } from 'test-utils';
 import Button, { ButtonColors, ButtonsVariants } from 'simulador/components/atoms/Button';
 
 
-test('renders a text', () => {
+test('renders a texts', () => {
   const { getByText } = render(
       <Button>Click here</Button>
   );
@@ -12,7 +12,7 @@ test('renders a text', () => {
   expect(getByText('Click here')).toBeInTheDocument();
 });
 
-test('trigger event on click', () => {
+test('triggers event on click', () => {
   const handleClick = jest.fn();
 
   const { getByRole } = render(<Button onClick={handleClick} />);
@@ -24,7 +24,7 @@ test('trigger event on click', () => {
 
 
 test.each(Object.values(ButtonColors).map((item) => [item]))(
-  "renders with color %s",
+  "render with color %s",
   (color) => {
     const { asFragment } = render(<Button color={color} />);
 
@@ -32,19 +32,19 @@ test.each(Object.values(ButtonColors).map((item) => [item]))(
   }
 );
 
-test.each(Object.values(ButtonsVariants).map((item) => [item]))('render with collor %s', (variant) => {
+test.each(Object.values(ButtonsVariants).map((item) => [item]))('renders with collor %s', (variant) => {
   const {asFragment} = render(<Button variant={variant}>Click here</Button>);
   
   expect(asFragment()).toMatchSnapshot();
 });
 
-test('renders with color primary and variant outlined', () => {
+test('render with color primary and variant outlined', () => {
   const {asFragment} = render(<Button variant="outlined">Click here</Button>);
   
   expect(asFragment()).toMatchSnapshot();
 })
 
-test('renders with color primary and variant link', () => {
+test('render with color primary and variant link', () => {
   const {asFragment} = render(<Button variant="link">Click here</Button>);
   
   expect(asFragment()).toMatchSnapshot();
