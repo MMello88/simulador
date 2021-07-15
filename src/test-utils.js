@@ -1,12 +1,15 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { MemoryRouter as Router } from "react-router-dom";
 
 import ThemeProvider from "./simulador/styles/ThemeProvider";
 
 const TestProvider = ({children}) => (
-  <ThemeProvider>
-    {children}
-  </ThemeProvider>
+  <Router>
+    <ThemeProvider>
+      {children}
+    </ThemeProvider>
+  </Router>
 );
 
 export * from '@testing-library/react';
