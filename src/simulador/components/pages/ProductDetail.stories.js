@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProductDetail from "./ProductDetail";
+import products from "simulador/models/builders/fixtures/products.json";
 
 export default {
   title: "Components/Pages/ProductDetail",
@@ -8,5 +9,5 @@ export default {
 }
 
 export const usege = () => (
-  <ProductDetail></ProductDetail>
+  <ProductDetail product={products.slice(0,1)[0]} ></ProductDetail>
 );

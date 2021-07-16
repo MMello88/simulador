@@ -16,7 +16,7 @@ import MyFooter from "simulador/components/organisms/MyFooter";
 import ProductGrid from "simulador/components/organisms/ProductGrid";
 import Accordion, {AccordionGroup} from "simulador/components/atoms/Accordion";
 
-import ProductType from "types/ProductType";
+import ProductType from "simulador/models/types/ProductType";
 
 function Home({products}) {
     return (

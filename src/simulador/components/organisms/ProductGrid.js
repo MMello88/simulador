@@ -8,7 +8,7 @@ import {Heading} from "simulador/components/atoms/Heading";
 import Button from "simulador/components/atoms/Button";
 import Card, {CardBody, CardMedia} from "simulador/components/atoms/Card";
 
-import ProductType from "types/ProductType";
+import ProductType from "simulador/models/types/ProductType";
 
 const Toolbar = styled.div`
   margin-top: 40px;

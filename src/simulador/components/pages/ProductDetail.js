@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaIdCard, FaHome, FaScroll } from"react-icons/fa";
 
-import ProductType from "types/ProductType";
+import ProductType from "simulador/models/types/ProductType";
 
 import Hero from "simulador/components/molecules/Hero";
 import { Heading } from "simulador/components/atoms/Heading";
