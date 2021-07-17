@@ -1,0 +1,635 @@
+    1  ls
+    2  cd ..
+    3  ls
+    4  cd ..
+    5  ls
+    6  cd mnt/
+    7  ls
+    8  cd ..
+    9  ls
+   10  cd cdrom/
+   11  ls
+   12  cd ..
+   13  cd media/
+   14  ls
+   15  cd matheus/
+   16  ls
+   17  cd VBox_GAs_6.1.18/
+   18  ls
+   19  sudo ./VBoxLinuxAdditions.run 
+   20  xrandr -s 2560x768
+   21  cd /media/matheus/VBox_GAs_6.1.18/
+   22  ls
+   23  sudo ./VBoxLinuxAdditions.run 
+   24  shutdown -r
+   25  shutdown -h
+   26  shutdown -c
+   27  shutdown
+   28  ls
+   29  cd curso/
+   30  ls
+   31  nodejs somar.js 
+   32  nodejs app.js 
+   33  clear
+   34  cd aula1
+   35  nodejs somar.js 
+   36  cd ../aula2
+   37  nodejs app.js 
+   38  cd ../aula3
+   39  nodejs servidor.js 
+   40  npm -v
+   41  sudo apt install npm
+   42  npm -v
+   43  npm install express --save
+   44  cd ..
+   45  cd aula4
+   46  npm install express --save
+   47  cd ..
+   48  cd aula5
+   49  npm install express --save
+   50  nodejs server.js 
+   51  cd ..
+   52  cd aula6
+   53  npm install nodemon -g
+   54  sudo npm install nodemon -g
+   55  npm install express --save
+   56  nodemon server.js
+   57  cd ../aula7
+   58  cd /aula7
+   59  cd aula7
+   60  cd curso
+   61  cd aula7
+   62  npm install express --save
+   63  nodemon server.js 
+   64  cd curso/aula8/
+   65  npm install sequelize --save
+   66  npm install mysql2 --save
+   67  cd ../aula9/
+   68  npm install express --save
+   69  npm install sequelize --save
+   70  npm install express --save
+   71  npm install mysql2 --save
+   72  node conexao.js 
+   73  nodemon criarTabela.js 
+   74  ls
+   75  vi config_resolucao.txt 
+   76  tail -f config_resolucao.txt 
+   77  ls
+   78  cmatrix
+   79  sudo apt-get install cmatrix
+   80  sudo apt-get install cmatrix-xfont 
+   81  cmatrix 
+   82  cmatrix 
+   83  cmatrix -h
+   84  cmatrix -L
+   85  dsaf
+   86  ls
+   87  cmatrix -H
+   88  cmatrix -a
+   89  cmatrix -b
+   90  cmatrix -B
+   91  cmatrix -c
+   92  cmatrix -f
+   93  cmatrix -h
+   94  cmatrix -l
+   95  cmatrix -f
+   96  cmatrix -h
+   97  o
+   98  cmatrix -o
+   99  cmatrix -n
+  100  cmatrix -s
+  101  cmatrix -x
+  102  cmatrix -V
+  103  cmatrix -u
+  104  cmatrix -C
+  105  cmatrix -r
+  106  cmatrix -m
+  107  cmatrix -r
+  108  cmatrix -r -L
+  109  vim
+  110  ls
+  111  cd 'Área de Trabalho'/
+  112  ls
+  113  ls -a
+  114  cd
+  115  ls
+  116  cd Área\ de\ Trabalho/
+  117  ls
+  118  ls -la
+  119  ls
+  120  sudo apt-get install gnome-tweak
+  121  sudo apt-get install gnome-tweak-tool 
+  122  gnome-tweaks 
+  123  cdcd
+  124  cd /media/
+  125  ls
+  126  sudo gpasswd -a ion vboxsf
+  127  sudo gpasswd -a matheus vboxsf
+  128  cd sf_VirtualBox/
+  129  cd curso/aula12-mongoose/
+  130  npm e mongosse
+  131  npm unistall mongosse
+  132  npm uninstall mongosse
+  133  npm uninstall mongosse@5.11.15
+  134  npm uninstall mongosse
+  135  npm uninstall mongosse@5.11.15
+  136  npm install mongosse
+  137  sudo npm install mongosse
+  138  sudo npm uninstall mongoose
+  139  sudo npm install mongoose
+  140  cd curso/aula12-mongoose/
+  141  npm install mongoose --save
+  142  nodemon mongosse.js 
+  143  touch instrução-de-instalações.text
+  144  ls
+  145  vim instrução-de-instalações.text 
+  146  npm - h
+  147  vim instrução-de-instalações.text 
+  148  ng -v
+  149  vim instrução-de-instalações.text 
+  150  ng --version
+  151  nodejs
+  152  nodejs - h
+  153  nodejs -version
+  154  nodejs -v
+  155  code
+  156  cd Desenvolvimento/angular/
+  157  mkdir teste
+  158  npm install -g angular-cli
+  159  ls
+  160  cd teste/
+  161  npm install @angular/cli --save
+  162  ls
+  163  ng -v
+  164  sudo apt-get install ng-common 
+  165  ng -v
+  166  ng --version
+  167  code
+  168  ls
+  169  cd Desenvolvimento/
+  170  ls
+  171  cd angular/
+  172  ls
+  173  cd curso/
+  174  ls
+  175  cd app-aula/
+  176  ng server
+  177  ng serve
+  178  cd ..
+  179  cd matsme/
+  180  ng serve
+  181  cd ..
+  182  cd app-aula2
+  183  ng serve
+  184  cd ..
+  185  cd app-aula
+  186  ng serve
+  187  ls
+  188  ng g c input-property
+  189  ng g c output-property
+  190  ng g c ciclo-do-componente
+  191  ng g c view-child
+  192  cd ..
+  193  ls
+  194  ng new matsme
+  195  ng new app-aula-2
+  196  ng new app-aula2
+  197  cd app-aula2
+  198  ng g c diretiva-ngif
+  199  ng g s diretiva-ngif
+  200  ng g s diretiva-ngif/diretiva-ngif
+  201  cd ..
+  202  cd app-aula
+  203  ng lint
+  204  ng test
+  205  ng e2e
+  206  ng build
+  207  ng build --prod
+  208  cd ..
+  209  cd matsme/
+  210  ng build
+  211  cd ..
+  212  cd app-aula
+  213  ng g c diretiva-ngif
+  214  ng g c diretiva-ngswitch
+  215  cd ..
+  216  touch instrução-de-builds.text
+  217  vim instrução-de-builds.text 
+  218  curl]
+  219  curl
+  220  man curl
+  221  curl http://google.com
+  222  -i curl http://google.com
+  223  curl -i  http://google.com
+  224  curl -v  http://google.com
+  225  clear
+  226  ls
+  227  code
+  228  node -v
+  229  npm - v
+  230  npm -v
+  231  yarn -v
+  232  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+  233  sudo apt update && sudo apt install yarn
+  234  ls
+  235  cd curso/aulas/projeto2/simulador/
+  236  npx sb init
+  237  npm run storybook
+  238  cd curso/aulas/projeto2/simulador/
+  239  npm install --save-dev --save-exact prettier
+  240  cd
+  241  cd Desenvolvimento/git/
+  242  touch instalacao.git.txt
+  243  code instalacao.git.txt 
+  244  cd curso/aulas/projeto2/simulador/
+  245  npm run storybook
+  246  clear
+  247  npm run storybook
+  248  clear
+  249  npm styled-components
+  250  yarn styled-components
+  251  npm install --save styled-components
+  252  npm audit fix
+  253  npm run storybook
+  254  yarn add @storybook/addon-viewreport
+  255  yarn add @storybook/addon-viewport
+  256  npm install @storybook/addon-viewport
+  257  npm run storybook
+  258  npm install prop-types
+  259  npm run storybooks
+  260  npm run storybook
+  261  npm install @storybook/addon-knobs
+  262  npm run storybook
+  263  vim /home/matheus/.npm/_logs/2021-07-01T21_59_25_319Z-debug.log
+  264  npm run storybook
+  265  clear
+  266  npm test
+  267  npm install jest-styled-components
+  268  npm test
+  269  npm test -- --covarege --watchAll=false
+  270  npm test -- --coverage --watchAll=false
+  271  npm test
+  272  npm cover
+  273  yarn cover
+  274  npm cover
+  275  cover
+  276  yarn cover
+  277  npm test
+  278  npm storybooks
+  279  npm run storybook
+  280  npm run cover
+  281  npm test
+  282  cd..
+  283  cd ../git/
+  284  apt-get install git
+  285  sudo apt-get install git
+  286  sudo add-apt-repository ppa:git-core/ppa # apt update; apt install git
+  287  cd ..
+  288  git config --global user.name"MattMello88"
+  289  # git config --global user.email"matheusnarciso@hotmail.com"
+  290  git init
+  291  sudo git init
+  292  ls
+  293  ls -la
+  294  cd .git
+  295  ls
+  296  vim config 
+  297  d ..
+  298  cd ..
+  299  git remote add origin https://github.com/MattMello88/Cursos.git
+  300  sudo git remote add origin https://github.com/MattMello88/Cursos.git
+  301  ls
+  302  git pull origin master
+  303  sudo git pull origin master
+  304  sudo git pull origin main
+  305  sudo git add .
+  306  sudo git commit -m "iniciando os cursos feitos"
+  307  sudo git config --global user.name"MattMello88"
+  308  sudo git config --global user.email"matheusnarciso@hotmail.com"
+  309  sudo git commit -m "iniciando os cursos feitos"
+  310  sudo git config --global user.email "matheusnarciso@hotmail.com"
+  311  sudo git config --global user.name "MattMello88"
+  312  sudo git commit -m "iniciando os cursos feitos"
+  313  sudo git push origin main
+  314  sudo git show-ref
+  315  sudo git ls-remote
+  316  sudo git checkout main
+  317  sudo git push origin master
+  318  ls
+  319  git .
+  320  sudo git .
+  321  ls
+  322  ls -la
+  323  cd .git/
+  324  ls
+  325  ls -la
+  326  vim index 
+  327  vim /home/matheus/Desenvolvimento/.git/index.lock
+  328  sudo chmod -R 775 
+  329  cd ..
+  330  sudo chmod -R 775 .git/
+  331  ls -la
+  332  cd .git/
+  333  rm -f index.lock
+  334  ls
+  335  ls -la
+  336  touch index.lock
+  337  sudo touch index.lock
+  338  rm -f index.lock
+  339  sudo rm -f index.lock
+  340  cd ..
+  341  sudo chmod -R matheus Desenvolvimento/
+  342  sudo chmod -R matheus-VB Desenvolvimento/
+  343  sudo chmod -R matheu Desenvolvimento/
+  344  sudo chmod -R matheus Desenvolvimento/
+  345  sudo chmod -R matheus:Desenvolvimento/
+  346  npx
+  347  npx -v
+  348  npx create-react-app simulador
+  349  cd simulador/
+  350  ls
+  351  cd ..
+  352  ls
+  353  rm simulador/
+  354  rm -r simulador/
+  355  ls
+  356  cd Desenvolvimento/
+  357  ls
+  358  cd angular/
+  359  ls
+  360  vim instrução-criar-component.txt 
+  361  vim instrução-criar-in
+  362  vim instrução-de-instalações.text 
+  363  vim instrução-criar-component.txt 
+  364  xs ..
+  365  cd ..
+  366  ls
+  367  cd reactjs/
+  368  ls
+  369  cd curso/
+  370  ls
+  371  cd aulas/
+  372  ls
+  373  cd projeto2
+  374  npx create-react-app simulador
+  375  ls
+  376  cd simulador/
+  377  ls
+  378  npm start
+  379  cd 
+  380  cd Desenvolvimento/
+  381  sudo
+  382  sudo su
+  383  sudo code
+  384  sudo vscode
+  385  sudo code
+  386  code
+  387  sudo code --user-data-dir /home/matheus/Desenvolvimento/
+  388  ls -la
+  389  code
+  390  sudo chmod 755 /home/matheus/.vscode/
+  391  sudo chmod 755 /home/matheus/.config/Code/
+  392  ls
+  393  ls -la
+  394  code
+  395  cd Desenvolvimento/reactjs/curso/aulas/projeto2/simulador/
+  396  npm run storybook
+  397  npm run
+  398  npm start
+  399  cd reactjs/curso/aulas/projeto2/simulador/
+  400  ls
+  401  cd
+  402  cd Desenvolvimento/
+  403  git status
+  404  git add .
+  405  git commit -m "organizaçao foi montada de acordo com a especificaçao Atomic Design"
+  406  git push
+  407  cd reactjs/curso/aulas/projeto2/simulador/
+  408  npm test
+  409  npm cover
+  410  npm run cover
+  411  clear
+  412  git reset HEAD BeachSunset.mp4
+  413  git status
+  414  git commit --amend
+  415  cd reactjs/curso/aulas/projeto2/simulador/
+  416  git status
+  417  git ls-files
+  418  git lfs install
+  419  sudo apt-get install git-lfs 
+  420  git lfs track '*.mp4'
+  421  git lfs ls-files
+  422  git lfs push --all origin master
+  423  git push -u origin master
+  424  curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+  425  git lfs install
+  426  git lfs track "*.mp4"
+  427  git add .gitattributes
+  428  git status
+  429  git add src/simulador/assets/BeachSunset.mp4
+  430  git commit -m "mp4 grande"
+  431  git push origin master
+  432  git lfs track files larger than 100M
+  433  git lfs track files larger than 200M
+  434  git add .gitattributes
+  435  git filter-branch --tree-filter 'rm -rf  src/simulador/assets/BeachSunset.mp4' HEAD
+  436  git filter-branch --tree-filter 'rm -rf  Desenvolvimento/reactjs/curso/aulas/projeto2/simuladorsrc/simulador/assets/BeachSunset.mp4' HEAD
+  437  npm start
+  438  cd reactjs/curso/aulas/projeto2/simulador/
+  439  npm start
+  440  cd reactjs/curso/aulas/projeto2/simulador/
+  441  clear
+  442  npm run storybook
+  443  git push origin master
+  444  git rm --cached reactjs/curso/aulas/projeto2/simulador/src/simulador/assets/BeachSunset.mp4
+  445  git rm --cached desnvolvimento/reactjs/curso/aulas/projeto2/simulador/src/simulador/assets/BeachSunset.mp4
+  446  git rm --cached 'Desenvolvimento/reactjs/curso/aulas/projeto2/simulador/src/simulador/assets/BeachSunset.mp4'
+  447  git rm --cached 'reactjs/curso/aulas/projeto2/simulador/src/simulador/assets/BeachSunset.mp4'
+  448  x-special/nautilus-clipboard
+  449  copy
+  450  file:///home/matheus/%C3%81rea%20de%20Trabalho/BeachSunset.mp4
+  451  git commit --amend -CHEAD
+  452  git push
+  453  git push --force
+  454  bfg --delete-files reactjs/curso/aulas/projeto2/simulador/src/simulador/assets/BeachSunset.mp4
+  455  git clone --mirror git://example.com/some-big-repo.git
+  456  java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
+  457  sudo java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
+  458  sudo apt update
+  459  java -version
+  460  sudo apt install default-jre
+  461  java -version
+  462  sudo apt install default-jdk
+  463  javac -version
+  464  java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
+  465  ls
+  466  cd ..
+  467  mkdir Desenvolvimento1
+  468  cd Desenvolvimento1
+  469  git clone --mirror https://github.com/MattMello88/Cursos.git
+  470  ls
+  471  cd Cursos.git/
+  472  ls
+  473  vim HEAD 
+  474  vim config 
+  475  cd ../../Desenvolvimento
+  476  ls
+  477  ls -la
+  478  cd .git/
+  479  ls
+  480  vim HEAD 
+  481  vim ORIG_HEAD 
+  482  vim index 
+  483  vim FETCH_HEAD 
+  484  cd branches/
+  485  ls
+  486  ls -la
+  487  cd ../hooks/
+  488  ls
+  489  vim commit-msg.sample 
+  490  clear
+  491  cd ../
+  492  cd ..
+  493  ls
+  494  cd ..
+  495  ls
+  496  rm -rf Desenvolvimento1/
+  497  cd Desenvolvimento/
+  498  cd reactjs/curso/aulas/projeto2/simulador/
+  499  ls
+  500  npm run storybook
+  501  clear
+  502  npm run storybook
+  503  cd reactjs/curso/aulas/projeto2/simulador/
+  504  npm run
+  505  ls
+  506  npm start
+  507  npm build
+  508  npm run build
+  509  npm install -g serve
+  510  sudo npm install -g serve
+  511  serve -s build
+  512  npm remove serve
+  513  npm cover
+  514  cd reactjs/curso/aulas/projeto2/simulador/
+  515  npm cover
+  516  npm run cover
+  517  npm test
+  518  npm run cover
+  519  npm test
+  520  npm run cover
+  521  npm test
+  522  npm run cover
+  523  touch site
+  524  vim site 
+  525  ls
+  526  cd src
+  527  ls
+  528  npm start
+  529  cd Desenvolvimento/reactjs/curso/aulas/projeto2/simulador/
+  530  ls
+  531  ls -la
+  532  cd .storybook/
+  533  ls
+  534  vim main.js 
+  535  sudo apt-get install shutter
+  536  sudo add-apt-repository ppa:linuxuprising/shutter
+  537  sudo apt-get update
+  538  sudo apt install shutter
+  539  sudo apt install gnome-web-photo
+  540  shutter
+  541  git init
+  542  ls -la
+  543  git remote add origin https://github.com/MattMello88/simulador.git
+  544  git pull origin master
+  545  git pull origin main
+  546  ls
+  547  touch README.md
+  548  git commit -m "readme"
+  549  git add .
+  550  git commit -m "readme"
+  551  git branch -M main
+  552  git remote add origin https://github.com/MattMello88/simulador.git
+  553  git push -u origin main
+  554  npm
+  555  npm install
+  556  npm run storybook
+  557  clear
+  558  npm run storybook
+  559  npm install
+  560  rm -rf node_modules/
+  561  rm -rf package-lock.json 
+  562  npm install
+  563  npm run storybook
+  564  npx sb init
+  565  npm run storybook
+  566  npm run build-storybook
+  567  npm install --save-dev chromatic
+  568  npx chromatic --project-token=cd133a10cc73
+  569  clear
+  570  git status
+  571  git checkout -b correcoes-home
+  572  git status
+  573  npm run storybook
+  574  npm install --save babel-load
+  575  npm install --save babel-loader
+  576  npm start
+  577  ls
+  578  cd src/
+  579  ls
+  580  rm --rf stories/
+  581  sudo rm -rf stories/
+  582  cd simulador/
+  583  ls
+  584  sudo rm -rf exemples/
+  585  ls
+  586  npm run storybook
+  587  clear
+  588  git push
+  589  git push --set-upstream origin correcoes-home
+  590  npm run storybook
+  591  clear
+  592  npm run storybook
+  593  vim site 
+  594  exit
+  595  npm run storybook
+  596  npm test
+  597  npm test -u
+  598  npm test
+  599  npm test -u
+  600  npm run cover
+  601  npm test
+  602  npm test -u
+  603  jest --updateSnapshot
+  604  npm jest --updateSnapshot
+  605  npm tun jest --updateSnapshot
+  606  npm run jest --updateSnapshot
+  607  jest --updateSnapshot
+  608  npm test --updateSnapshot
+  609  npm test -u
+  610  npm upgrade
+  611  npm install
+  612  npm test
+  613  npm test -u
+  614  npm run svg svg/speed.svg
+  615  $ npm install history react-router-dom@next
+  616  sudo $ npm install history react-router-dom@next
+  617  npm install react-router-dom@next
+  618  npm
+  619  npm -v
+  620  npm install history react-router-dom@next
+  621  npm start
+  622  cd /
+  623  ls
+  624  find babel-loader
+  625  find . -name babel-loader
+  626  sudo find . -name babel-loader
+  627  exit
+  628  vim site 
+  629  node src/simulador/models/builders/products.js 
+  630  node src/simulador/models/builders/products.js >> src/simulador/models/fixtures/products.json
+  631  node src/simulador/models/builders/products.js >> src/simulador/models/builders/fixtures/products.json
+  632  node src/simulador/models/builders/products.js > src/simulador/models/builders/fixtures/products.json
+  633  yarn svg src/svg/taken.svg
+  634  history
+  635  history > histy.text

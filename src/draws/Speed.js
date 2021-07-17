@@ -8,6 +8,7 @@ function SvgSpeed(props) {
       width="1em"
       height="1em"
       viewBox="0 0 1012 794"
+      role="img"
       {...props}
     >
       <path

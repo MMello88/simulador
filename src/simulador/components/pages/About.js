@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { useScrollToTop } from "hooks/scroll";
-
 import Hero from "simulador/components/molecules/Hero";
 import { Heading } from "simulador/components/atoms/Heading";
 import Section from "simulador/components/molecules/Section";
@@ -65,8 +63,6 @@ const instructors = [
 ];
 
 const About = () => {
-  useScrollToTop();
-
   const items = [
     {label: "Inicio", link: "/"},
     {label: "Sobre", link: ""}

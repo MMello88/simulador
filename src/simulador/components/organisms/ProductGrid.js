@@ -8,6 +8,8 @@ import {Heading} from "simulador/components/atoms/Heading";
 import Button from "simulador/components/atoms/Button";
 import Card, {CardBody, CardMedia} from "simulador/components/atoms/Card";
 
+import ProductType from "simulador/models/types/ProductType";
+
 const Toolbar = styled.div`
   margin-top: 40px;
   text-align: center;
@@ -30,7 +32,7 @@ const ProductGrid = ({products}) => {
                 </Heading>
                 <p>{product.summary}</p>
                 <div>
-                  <Button color="primary" variant="link" as={Link} to="/Servicos">Saiba mais</Button>
+                  <Button color="primary" variant="link" as={Link} to={`/Servicos/${product.slang}`}>Saiba mais</Button>
                 </div>
               </CardBody>
             </Card>
@@ -57,12 +59,7 @@ ProductGrid.defaultProps = {
 
 ProductGrid.propTypes = {
   products: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-      image: PropTypes.string,
-      title: PropTypes.string,
-      summary: PropTypes.string
-    })
+    ProductType
   )
 };
 

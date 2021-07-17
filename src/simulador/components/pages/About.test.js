@@ -7,9 +7,12 @@ import About from "./About";
  * vou colocar o comando de mocks
  */
 
+/*
+retirei esta função pois o outro teste foi movido para o about.test.js da rota 
 beforeEach(() => {
   jest.resetAllMocks();
 })
+*/
 
 test('render about page', () => {
   render(<About></About>);
@@ -18,7 +21,3 @@ test('render about page', () => {
 });
 
 
-test('scrolls to top in first render', () =>{
-  render(<About></About>);
-  expect(window.scrollTo).toBeCalledTimes(1);
-})

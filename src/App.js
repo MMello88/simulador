@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import ThemeProvider from 'simulador/styles/ThemeProvider';
 import GlobalStyle from 'simulador/styles/GlobalStyle';
-import Home from "simulador/components/pages/Home";
-import About from "simulador/components/pages/About";
-import ProductDetail from "simulador/components/pages/ProductDetail";
+
+import Routes from "routes"
+
 
 
 function App() {
@@ -14,11 +14,7 @@ function App() {
         <GlobalStyle />
 
         <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Sobre" element={<About />} />
-            <Route path="/Servicos" element={<ProductDetail />} />
-          </Routes>
+          <Routes></Routes>
         </Router>
 
         
