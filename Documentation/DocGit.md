@@ -6,6 +6,22 @@
 # git checkout -b nome-da-branche
 ```
 
+## Remover de Brance
+
+### `Local`
+
+```sh
+# git branch -d nome-da-branch
+
+# -D // force o delete
+```
+
+### `Remoto`
+
+```sh
+# git push origin --delete nome-da-branch
+```
+
 Ao fazer o checkout de uma nova branche automaticamente o projeto já esta direcionando para esta branche.
 
 > Nota: **# git status** vc pode verificar sua nova branche configurada
